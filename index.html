@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>discern</title>
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head>
+<body>
+
+<div class="container">
+  <div class="section" onmouseover="changeImage('images/cam/cam1.png')" onmouseout="resetImage()">
+    <button onclick="showPopup('Disclaimer', 'Please note the dataset used in the map linked below is the result of a large crowdsourcing project by Amnesty\'s Decode Surveillance NYC. The process included digital volunteers from around the world cross-checking google maps feeds of intersections throughout the city to identify and label cameras. The project ended in 2021 but some images from google maps may have been from years earlier. This dataset is not meant to be a full-proof maps of exact camera locations but a rough estimate with a messiness that perhaps asks for further questioning of why this information is otherwise unreported by both public and private camera maintainers. No user data, including location, is recorded or stored.')">Disclaimer</button>
+  </div>
+  <div class="section" onmouseover="changeImage('images/cam/cam2.png')" onmouseout="resetImage()">
+    <button onclick="showVideoPopup('Walk Vlogs')">Video Walks</button>
+  </div>
+  <div class="section" onmouseover="changeImage('images/cam/cam3.png')" onmouseout="resetImage()">
+    <button onclick="showPopup('Context', 'The presumption of innocence states that &quot;every person accused of any crime is considered innocent until proven guilty&quot;, this age-old principle has been enacted into the U.S. judicial system since the landmark 1895 case &quot;Coffin v. United States&quot; and remains the basis for such legal standards as &quot;reasonable doubt&quot; &amp; &quot;probable cause” which grant people in the U.S. protections from unreasonable search &amp; unjust convictions. As just as this all sounds in theory, these ideals are evidently far from being upheld in practice. Growing up in a low-income Latino community &amp; household during the early aughts, the enforcement &amp; surveillance tactics used to act-out war on drugs era legislation were all too familiar &amp; visible to me at school &amp; at home. From having class time interrupted by random K-9 drug searches in High School to witnessing the sudden arrests of my collegiate peers during peaceful protests on campus, the exception to these protections have become all too familiar to me. For many other folks of identities and communities made marginal by capitalism and white supremacy, including Black, Brown, Indigenous, Immigrant, Muslim, LGBTQ+, Latine and Low-Income communities, these exceptions are painfully clear. In Brooklyn, where this project lives, there is a vast history of over-policing and thus over-surveillance of its communities of color; as just one example take the &quot;Stop-and-frisk&quot; program which targeted and harmed Black and Latino communities in Bed-Stuy contributing to a systemic violation of rights and over-representation in the area\'s jails and prisons. The implementation of digital and automated policing technologies such as video surveillance cameras, facial recognition searching, AI gunshot detection microphones and automated license plate readers (to name just a few) only complicate this legacy of inequity in the application of carceral power and judicial exception to which these communities are subjected to. While no single act or tool can undo the years and years of harm that these practices (which can be traced back to this country\'s period of enslavement and colonization) can immediately unravel the infrastructure that supports them, discernible.tech aims to at least contribute to a growing public consciousness on these systems and calls for support to reject and/or better regulate them in the public interest.')">Context</button>
+  </div>
+  <div class="section" onmouseover="changeImage('images/cam/cam4.png')" onmouseout="resetImage()">
+    <!-- <button onclick="showPopup('Note geolocation function is broken in this iframe, join on your phone to test it out: discernible.tech iphone users do not forget the https!', '&lt;img src=&quot;images/qr.png; &gt;')">Map</button> -->
+    <button onclick="showPopup('feel free to join via your mobile device as I forgot to bring a keyboard haha. It may look a little odd on iPhone, sorry about that! The URL is discernible.tech and lead with the https!', '')">Map</button>
+
+  </div>
+</div>
+
+<div class="circle" onmouseover="keepImage()" onmouseout="resetImage()">
+  <img id="image" class="image" src="" alt="Image">
+</div>
+
+<div class="overlay" onclick="hidePopup()"></div>
+<div class="popup" id="popup">
+  <span class="close-btn" onclick="hidePopup()">&times;</span>
+  <h2 id="popup-title"></h2>
+  <div id="popup-content"></div>
+<div class="tab-buttons" id="video-buttons" style="display: none;">
+    <button onclick="showVideoTab('Transparency')">Transparency</button>
+    <button onclick="showVideoTab('Trust')">Trust</button>
+    <button onclick="showVideoTab('Visibility')">Visibility</button>
+    <button onclick="showVideoTab('Self-Surveillance')">Self-Surveillance</button>
+    <button onclick="showVideoTab('Commercial')">Commercial</button>
+</div>
+<div id="video-container"></div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
