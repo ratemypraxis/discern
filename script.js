@@ -20,7 +20,7 @@ function showPopup(title, content) {
 function showVideoPopup(title) {
   document.getElementById("popup-content").innerHTML = ''; 
   document.getElementById("popup-title").textContent = title;
-  if (title === 'Walk Vlogs') {
+  if (title === 'Field Research') {
     showVideoTab('Transparency');
     document.getElementById("video-buttons").style.display = "flex"; 
     document.getElementById("video-container").style.display = "flex"; 
@@ -34,7 +34,7 @@ function showVideoPopup(title) {
 }
 
 function showVideoTab(tabName) {
-  if (document.getElementById("popup-title").textContent === 'Walk Vlogs') {
+  if (document.getElementById("popup-title").textContent === 'Field Research') {
     var videoURL = videoURLs[tabName];
     var embed = document.createElement('embed');
     embed.type = "video/webm";
