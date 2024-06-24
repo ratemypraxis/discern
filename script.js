@@ -65,7 +65,7 @@ function keepImage() {
 
 function resetImage() {
   if (!isMouseOverImage) {
-    document.getElementById("image").src = "images/cam/cam1.png"; 
+    document.getElementById("image").src = "images/cam/cam4.png"; 
   }
 }
 

@@ -23,8 +23,12 @@
   </div>
 </div>
 
-<div class="circle" onmouseover="keepImage()" onmouseout="resetImage()">
+<!-- <div class="circle" onmouseover="keepImage()" onmouseout="resetImage()">
   <img id="image" class="image" src="" alt="Image">
+</div> -->
+
+<div class="circle" id="brother" onmouseover="keepImage()" onmouseout="resetImage()">
+  <img id="image" class="image" src="images/cam/cam4.png" alt="Image">
 </div>
 
 <div class="overlay" onclick="hidePopup()"></div>
@@ -33,11 +37,17 @@
   <h2 id="popup-title"></h2>
   <div id="popup-content"></div>
 <div class="tab-buttons" id="video-buttons" style="display: none;">
-    <button onclick="showVideoTab('Transparency')">Transparency</button>
-    <button onclick="showVideoTab('Trust')">Trust</button>
-    <button onclick="showVideoTab('Visibility')">Visibility</button>
-    <button onclick="showVideoTab('Self-Surveillance')">Self-Surveillance</button>
-    <button onclick="showVideoTab('Commercial')">Commercial</button>
+    <button class="desktop" onclick="showVideoTab('Transparency')">Transparency</button>
+    <button class="desktop" onclick="showVideoTab('Trust')">Trust</button>
+    <button class="desktop" onclick="showVideoTab('Visibility')">Visibility</button>
+    <button class="desktop" onclick="showVideoTab('Self-Surveillance')">Self-Surveillance</button>
+    <button class="desktop" onclick="showVideoTab('Commercial')">Commercial</button>
+
+    <button class="mobile" onclick="showVideoTab('Transparency')">1</button>
+    <button class="mobile" onclick="showVideoTab('Trust')">2</button>
+    <button class="mobile" onclick="showVideoTab('Visibility')">3</button>
+    <button class="mobile" onclick="showVideoTab('Self-Surveillance')">4</button>
+    <button class="mobile" onclick="showVideoTab('Commercial')">5</button>
 </div>
 <div id="video-container"></div>
 
