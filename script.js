@@ -47,6 +47,7 @@ function showVideoTab(tabName) {
 }
 
 
+
 function hidePopup() {
   var videoContainer = document.getElementById("video-container");
   videoContainer.innerHTML = ''; 

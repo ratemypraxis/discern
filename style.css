@@ -144,6 +144,10 @@ body {
         width: 100%;
     }
 
+    iframe{
+        width: 100%;
+    }
+
     .desktop {
         display: none;
     }
